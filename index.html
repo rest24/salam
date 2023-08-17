@@ -87,12 +87,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>Sapaan dalam Berbagai Bahasa</h1>
+        <h1>Salam dina macem-macem Basa</h1>
         <form id="greetingForm">
-            <label for="nama">Nama Anda :</label>
+            <label for="nama">Ngaran Anjeun :</label>
             <input type="text" name="nama" id="nama" required>
             <br>
-            <label for="sapa">Sapaan dalam bahasa :</label>
+            <label for="sapa">Pilih bahasa :</label>
             <select name="sapa" id="sapa" required>
                 <option value="Indonesia">Indonesia</option>
                 <option value="Inggris">Inggris</option>
@@ -140,8 +140,18 @@
                 displayModalGreeting("早上好 " + nama + " ..!!", "祝您有愉快的一天，" + nama + " ..!! :)");
             } else if (sapa == "Rusia") {
                 displayModalGreeting("Доброе утро " + nama + " ..!!", "Пусть ваш день будет приятным, " + nama + " ..!! :)");
+            } else if (sapa == "Latin") {
+                displayModalGreeting("Salve " + nama + " ..!!", "Bene sit tibi, " + nama + " ..!! :)");
+            } else if (sapa == "Spanyol") {
+                displayModalGreeting("¡Buenos días " + nama + " ..!!", "Espero que tengas un día estupendo, " + nama + " ..!! :)");
+            } else if (sapa == "Jepang") {
+                displayModalGreeting("おはようございます " + nama + " ..!!", "素晴らしい一日を、" + nama + " ..!! :)");
+            } else if (sapa == "Jerman") {
+                displayModalGreeting("Guten Morgen " + nama + " ..!!", "Ich wünsche Ihnen einen schönen Tag, " + nama + " ..!! :)");
+            } else if (sapa == "Korea") {
+                displayModalGreeting("안녕하세요 " + nama + " ..!!", "즐거운 하루 되세요, " + nama + " ..!! :)");
             }
-        }
+            }
         
         function displayModalGreeting(greeting, message) {
             var modal = document.getElementById("myModal");
